@@ -290,12 +290,13 @@ def run_experiment(
     selected_config_names: Optional[List[str]] = None,
     selected_test_ids: Optional[List[str]] = None,
     selected_models: Optional[List[str]] = None,
+    experiment_run_id: Optional[str] = None,
 ) -> Dict[str, Any]:
     dataset = load_dataset(dataset_path)
     dataset = filter_dataset(dataset, selected_test_ids=selected_test_ids)
     configs = load_configs(configs_dir)
 
-    experiment_run_id = uuid.uuid4().hex
+    experiment_run_id = _safe_name(experiment_run_id) if experiment_run_id else uuid.uuid4().hex
     timestamp_utc = datetime.now(timezone.utc).isoformat()
 
     db_file = PROJECT_ROOT / db_path if not Path(db_path).is_absolute() else Path(db_path)
@@ -399,6 +400,7 @@ def build_arg_parser() -> argparse.ArgumentParser:
     parser.add_argument("--db-path", default="src/experiments/results/results.sqlite3")
     parser.add_argument("--output-dir", default="src/experiments/results")
     parser.add_argument("--timeout-seconds", type=int, default=120)
+    parser.add_argument("--experiment-run-id", default=None)
     return parser
 
 
@@ -414,6 +416,7 @@ def main() -> None:
         db_path=args.db_path,
         output_dir=args.output_dir,
         timeout_seconds=args.timeout_seconds,
+        experiment_run_id=args.experiment_run_id,
     )
 
 

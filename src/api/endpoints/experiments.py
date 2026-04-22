@@ -181,6 +181,7 @@ def _run_job(job_id: str, body: ExperimentRunRequest) -> None:
             selected_config_names=body.selected_config_names,
             selected_test_ids=body.selected_test_ids,
             selected_models=selected_models,
+            experiment_run_id=body.experiment_run_id,
         )
 
         JOB_STORE[job_id]["status"] = "completed"

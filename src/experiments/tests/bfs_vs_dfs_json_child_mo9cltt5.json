@@ -1,0 +1,31 @@
+{
+  "id": "bfs_vs_dfs_json_child_mo9cltt5",
+  "input": "Верни только JSON-объект с ключами bfs, dfs, difference, usecases, где кратко сравни BFS и DFS.",
+  "runtime_params": {
+    "temperature": 0.3,
+    "top_p": 0.9,
+    "top_k": 40,
+    "num_predict": 256,
+    "seed": 42,
+    "think": true
+  },
+  "checks": {
+    "response_not_empty": true,
+    "json_valid": true,
+    "must_have_keys": [
+      "bfs",
+      "dfs",
+      "difference",
+      "use_cases"
+    ],
+    "max_length": 700
+  },
+  "tags": [
+    "branch:main",
+    "board_config:think_enabled",
+    "ui-board",
+    "changed:input",
+    "parent_test:bfs_vs_dfs_json",
+    "parent_block:71f9dc09fa984e929efff9e6a9148825:think_enabled:bfs_vs_dfs_json"
+  ]
+}

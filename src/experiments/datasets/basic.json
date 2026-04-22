@@ -4,49 +4,77 @@
     "input": "Напиши на Python функцию fibonacci_recursive(n), которая вычисляет n-е число Фибоначчи через чистую рекурсию. Без пояснений.",
     "checks": {
       "response_not_empty": true,
-      "contains": ["def fibonacci_recursive", "return"],
+      "contains": [
+        "def fibonacci_recursive",
+        "return"
+      ],
       "regex": [
         "fibonacci_recursive\\(n\\s*-\\s*1\\)",
         "fibonacci_recursive\\(n\\s*-\\s*2\\)"
       ],
       "max_length": 700
     },
-    "tags": ["code", "python", "recursion", "fibonacci"]
+    "tags": [
+      "code",
+      "python",
+      "recursion",
+      "fibonacci"
+    ]
   },
   {
     "id": "fib_dp_python",
     "input": "Напиши на Python функцию fibonacci_dp(n), которая вычисляет n-е число Фибоначчи через динамическое программирование. Без пояснений.",
     "checks": {
       "response_not_empty": true,
-      "contains": ["def fibonacci_dp", "return"],
+      "contains": [
+        "def fibonacci_dp",
+        "return"
+      ],
       "regex": [
         "dp\\s*=\\s*\\[",
         "for\\s+.*in\\s+range"
       ],
       "max_length": 900
     },
-    "tags": ["code", "python", "dp", "fibonacci"]
+    "tags": [
+      "code",
+      "python",
+      "dp",
+      "fibonacci"
+    ]
   },
   {
     "id": "gcd_euclid_python",
     "input": "Напиши на Python функцию gcd(a, b), которая реализует алгоритм Евклида. Без пояснений.",
     "checks": {
       "response_not_empty": true,
-      "contains": ["def gcd", "return"],
+      "contains": [
+        "def gcd",
+        "return"
+      ],
       "regex": [
         "while\\s+b\\s*!=\\s*0|while\\s+b\\s*:",
         "a\\s*,\\s*b\\s*=\\s*b\\s*,\\s*a\\s*%\\s*b|a\\s*=\\s*b.*%.*b"
       ],
       "max_length": 500
     },
-    "tags": ["code", "python", "math", "euclid"]
+    "tags": [
+      "code",
+      "python",
+      "math",
+      "euclid"
+    ]
   },
   {
     "id": "bfs_python",
     "input": "Напиши на Python функцию bfs(graph, start), которая выполняет обход графа в ширину и возвращает порядок посещения вершин списком. Без пояснений.",
     "checks": {
       "response_not_empty": true,
-      "contains": ["def bfs", "visited", "return"],
+      "contains": [
+        "def bfs",
+        "visited",
+        "return"
+      ],
       "regex": [
         "deque",
         "while\\s+",
@@ -54,35 +82,59 @@
       ],
       "max_length": 1200
     },
-    "tags": ["code", "python", "graph", "bfs"]
+    "tags": [
+      "code",
+      "python",
+      "graph",
+      "bfs"
+    ]
   },
   {
     "id": "dfs_python",
     "input": "Напиши на Python функцию dfs(graph, start), которая выполняет обход графа в глубину и возвращает порядок посещения вершин списком. Без пояснений.",
     "checks": {
       "response_not_empty": true,
-      "contains": ["def dfs", "visited", "return"],
+      "contains": [
+        "def dfs",
+        "visited",
+        "return"
+      ],
       "regex": [
         "for\\s+.*in\\s+graph",
         "dfs\\("
       ],
       "max_length": 1200
     },
-    "tags": ["code", "python", "graph", "dfs"]
+    "tags": [
+      "code",
+      "python",
+      "graph",
+      "dfs"
+    ]
   },
   {
     "id": "binary_search_leftmost_python",
     "input": "Напиши на Python функцию binary_search_leftmost(arr, target), которая возвращает индекс первого вхождения target в отсортированном массиве или -1. Без пояснений.",
     "checks": {
       "response_not_empty": true,
-      "contains": ["def binary_search_leftmost", "left", "right", "return"],
+      "contains": [
+        "def binary_search_leftmost",
+        "left",
+        "right",
+        "return"
+      ],
       "regex": [
         "while\\s+left\\s*<=\\s*right|while\\s+left\\s*<\\s*right",
         "mid\\s*=\\s*\\(left\\s*\\+\\s*right\\)\\s*//\\s*2"
       ],
       "max_length": 1000
     },
-    "tags": ["code", "python", "search", "binary-search"]
+    "tags": [
+      "code",
+      "python",
+      "search",
+      "binary-search"
+    ]
   },
   {
     "id": "shortest_path_algorithm_json",
@@ -90,10 +142,20 @@
     "checks": {
       "response_not_empty": true,
       "json_valid": true,
-      "must_have_keys": ["problem", "algorithm", "reason", "complexity"],
+      "must_have_keys": [
+        "problem",
+        "algorithm",
+        "reason",
+        "complexity"
+      ],
       "max_length": 500
     },
-    "tags": ["json", "graphs", "reasoning", "algorithms"]
+    "tags": [
+      "json",
+      "graphs",
+      "reasoning",
+      "algorithms"
+    ]
   },
   {
     "id": "bfs_vs_dfs_json",
@@ -101,10 +163,19 @@
     "checks": {
       "response_not_empty": true,
       "json_valid": true,
-      "must_have_keys": ["bfs", "dfs", "difference", "use_cases"],
+      "must_have_keys": [
+        "bfs",
+        "dfs",
+        "difference",
+        "use_cases"
+      ],
       "max_length": 700
     },
-    "tags": ["json", "graphs", "comparison"]
+    "tags": [
+      "json",
+      "graphs",
+      "comparison"
+    ]
   },
   {
     "id": "api_design_books_json",
@@ -112,31 +183,50 @@
     "checks": {
       "response_not_empty": true,
       "json_valid": true,
-      "must_have_keys": ["entities", "endpoints", "risks", "notes"],
+      "must_have_keys": [
+        "entities",
+        "endpoints",
+        "risks",
+        "notes"
+      ],
       "max_length": 900
     },
-    "tags": ["json", "backend", "api-design"]
+    "tags": [
+      "json",
+      "backend",
+      "api-design"
+    ]
   },
   {
     "id": "pushkin_text",
     "input": "Напиши связный абзац из 5-6 предложений о значении Пушкина для русской литературы. Упомяни хотя бы одно произведение и не используй списки.",
     "checks": {
       "response_not_empty": true,
-      "contains": ["Пушкин"],
+      "contains": [
+        "Пушкин"
+      ],
       "regex": [
         "Онегин|Капитанская дочка|Руслан и Людмила|Борис Годунов"
       ],
       "min_length": 220,
       "max_length": 900
     },
-    "tags": ["text", "literature", "russian", "pushkin"]
+    "tags": [
+      "text",
+      "literature",
+      "russian",
+      "pushkin"
+    ]
   },
   {
     "id": "memoization_text",
     "input": "Объясни простыми словами, что такое мемоизация, зачем она нужна и как помогает ускорить рекурсивные алгоритмы. Ответ дай в 4-5 предложениях.",
     "checks": {
       "response_not_empty": true,
-      "contains": ["мемоизация", "рекурс"],
+      "contains": [
+        "мемоизация",
+        "рекурс"
+      ],
       "regex": [
         "кэш|сохраня",
         "Фибоначч|fib"
@@ -144,14 +234,21 @@
       "min_length": 180,
       "max_length": 700
     },
-    "tags": ["text", "algorithms", "memoization"]
+    "tags": [
+      "text",
+      "algorithms",
+      "memoization"
+    ]
   },
   {
     "id": "stack_queue_text",
     "input": "Сравни стек и очередь в одном небольшом абзаце: объясни принцип работы каждой структуры и приведи по одному жизненному примеру.",
     "checks": {
       "response_not_empty": true,
-      "contains": ["стек", "очередь"],
+      "contains": [
+        "стек",
+        "очередь"
+      ],
       "regex": [
         "LIFO|последним приш",
         "FIFO|первым приш"
@@ -159,6 +256,132 @@
       "min_length": 180,
       "max_length": 700
     },
-    "tags": ["text", "data-structures", "comparison"]
+    "tags": [
+      "text",
+      "data-structures",
+      "comparison"
+    ]
+  },
+  {
+    "id": "api_design_books_json_child_mo8zr1hn",
+    "input": "Верни только JSON-объект с ключами entities, endpoints, risks, notes для небольшого REST API системы библиотеки. 2 2 2 2",
+    "checks": {
+      "response_not_empty": true,
+      "json_valid": true,
+      "must_have_keys": [
+        "entities",
+        "endpoints",
+        "risks",
+        "notes"
+      ],
+      "max_length": 900
+    },
+    "tags": [
+      "branch:main",
+      "board_config:think_enabled",
+      "ui-board",
+      "changed:input",
+      "parent_test:api_design_books_json",
+      "parent_block:71f9dc09fa984e929efff9e6a9148825:think_enabled:api_design_books_json"
+    ]
+  },
+  {
+    "id": "bfs_python_child_mo92j6r3",
+    "input": "Напиши на Python функцию bfs(graph, start), которая выполняет обход графа в ширину и возвращает порядок посещения вершин списком. Без пояснений.",
+    "runtime_params": {
+      "temperature": 0.4,
+      "top_p": 0.9,
+      "top_k": 40,
+      "num_predict": 256,
+      "seed": 42,
+      "think": true
+    },
+    "checks": {
+      "response_not_empty": true,
+      "contains": [
+        "def bfs",
+        "visited",
+        "return"
+      ],
+      "regex": [
+        "deque",
+        "while\\s+",
+        "popleft\\("
+      ],
+      "max_length": 1200
+    },
+    "tags": [
+      "branch:main",
+      "board_config:think_enabled",
+      "ui-board",
+      "changed:runtime_params",
+      "parent_test:bfs_python",
+      "parent_block:71f9dc09fa984e929efff9e6a9148825:think_enabled:bfs_python"
+    ]
+  },
+  {
+    "id": "bfs_python_child_mo92j6r3_child_mo92k0ur",
+    "input": "Напиши на Python функцию bfs(graph, start), которая выполняет обход графа в ширину и возвращает порядок посещения вершин списком. Без пояснений.",
+    "runtime_params": {
+      "temperature": 0.4,
+      "top_p": 0.8,
+      "top_k": 40,
+      "num_predict": 256,
+      "seed": 42,
+      "think": true
+    },
+    "checks": {
+      "response_not_empty": true,
+      "contains": [
+        "def bfs",
+        "visited",
+        "return"
+      ],
+      "regex": [
+        "deque",
+        "while\\s+",
+        "popleft\\("
+      ],
+      "max_length": 1200
+    },
+    "tags": [
+      "branch:main",
+      "board_config:think_enabled",
+      "ui-board",
+      "changed:runtime_params",
+      "parent_test:bfs_python_child_mo92j6r3",
+      "parent_block:71f9dc09fa984e929efff9e6a9148825:think_enabled:bfs_python_child_mo92j6r3"
+    ]
+  },
+  {
+    "id": "bfs_vs_dfs_json_child_mo9cltt5",
+    "input": "Верни только JSON-объект с ключами bfs, dfs, difference, usecases, где кратко сравни BFS и DFS.",
+    "runtime_params": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "top_k": 40,
+      "num_predict": 256,
+      "seed": 42,
+      "think": true
+    },
+    "checks": {
+      "response_not_empty": true,
+      "json_valid": true,
+      "must_have_keys": [
+        "bfs",
+        "dfs",
+        "difference",
+        "use_cases"
+      ],
+      "max_length": 700
+    },
+    "tags": [
+      "branch:main",
+      "board_config:think_enabled",
+      "ui-board",
+      "changed:input",
+      "parent_test:bfs_vs_dfs_json",
+      "parent_block:71f9dc09fa984e929efff9e6a9148825:think_enabled:bfs_vs_dfs_json"
+    ]
   }
 ]

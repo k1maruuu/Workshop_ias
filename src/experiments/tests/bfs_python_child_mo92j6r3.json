@@ -1,0 +1,34 @@
+{
+  "id": "bfs_python_child_mo92j6r3",
+  "input": "Напиши на Python функцию bfs(graph, start), которая выполняет обход графа в ширину и возвращает порядок посещения вершин списком. Без пояснений.",
+  "runtime_params": {
+    "temperature": 0.4,
+    "top_p": 0.9,
+    "top_k": 40,
+    "num_predict": 256,
+    "seed": 42,
+    "think": true
+  },
+  "checks": {
+    "response_not_empty": true,
+    "contains": [
+      "def bfs",
+      "visited",
+      "return"
+    ],
+    "regex": [
+      "deque",
+      "while\\s+",
+      "popleft\\("
+    ],
+    "max_length": 1200
+  },
+  "tags": [
+    "branch:main",
+    "board_config:think_enabled",
+    "ui-board",
+    "changed:runtime_params",
+    "parent_test:bfs_python",
+    "parent_block:71f9dc09fa984e929efff9e6a9148825:think_enabled:bfs_python"
+  ]
+}

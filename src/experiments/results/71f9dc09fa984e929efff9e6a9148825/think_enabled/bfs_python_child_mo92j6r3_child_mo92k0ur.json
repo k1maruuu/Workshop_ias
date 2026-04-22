@@ -1,0 +1,76 @@
+{
+  "experiment_run_id": "71f9dc09fa984e929efff9e6a9148825",
+  "test_id": "bfs_python_child_mo92j6r3_child_mo92k0ur",
+  "config_name": "think_enabled",
+  "model_name": null,
+  "input_text": "Напиши на Python функцию bfs(graph, start), которая выполняет обход графа в ширину и возвращает порядок посещения вершин списком. Без пояснений.",
+  "response_text": "Internal Server Error",
+  "score": 0.25,
+  "passed": false,
+  "latency_ms": 235.4245000000219,
+  "timestamp_utc": "2026-04-22T01:07:01.498743+00:00",
+  "thread_id": "71f9dc09fa984e929efff9e6a9148825:think_enabled:bfs_python_child_mo92j6r3_child_mo92k0ur",
+  "trace_id": null,
+  "runtime_params": {
+    "temperature": 0.3,
+    "top_p": 0.9,
+    "top_k": 40,
+    "num_predict": 256,
+    "seed": 42,
+    "think": true
+  },
+  "raw_response": {
+    "error": {
+      "status": 500,
+      "body": "Internal Server Error"
+    }
+  },
+  "scoring": {
+    "score": 0.25,
+    "passed": false,
+    "checks_total": 8,
+    "checks_passed": 2,
+    "details": [
+      {
+        "check": "response_not_empty",
+        "passed": true,
+        "message": "Ответ не должен быть пустым."
+      },
+      {
+        "check": "contains:def bfs",
+        "passed": false,
+        "message": "Ответ должен содержать 'def bfs'."
+      },
+      {
+        "check": "contains:visited",
+        "passed": false,
+        "message": "Ответ должен содержать 'visited'."
+      },
+      {
+        "check": "contains:return",
+        "passed": false,
+        "message": "Ответ должен содержать 'return'."
+      },
+      {
+        "check": "regex:deque",
+        "passed": false,
+        "message": "Ответ должен соответствовать regex 'deque'."
+      },
+      {
+        "check": "regex:while\\s+",
+        "passed": false,
+        "message": "Ответ должен соответствовать regex 'while\\\\s+'."
+      },
+      {
+        "check": "regex:popleft\\(",
+        "passed": false,
+        "message": "Ответ должен соответствовать regex 'popleft\\\\('."
+      },
+      {
+        "check": "max_length",
+        "passed": true,
+        "message": "Длина ответа 21, лимит 1200."
+      }
+    ]
+  }
+}

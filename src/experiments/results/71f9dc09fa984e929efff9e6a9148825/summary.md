@@ -1,0 +1,1 @@
+# Experiment summary\n\n## By config\n\n| Config | Cases | Pass rate | Avg score | Avg latency (ms) |\n|---|---:|---:|---:|---:|\n| think_enabled | 1 | 0.00% | 0.2500 | 235.42 |\n\n**Best config:** `think_enabled` with avg score **0.2500**\n\n## Failed cases\n\n- `think_enabled` / `bfs_python_child_mo92j6r3_child_mo92k0ur` — score=0.2500, latency=235.42 ms

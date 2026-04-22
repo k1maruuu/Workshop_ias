@@ -1,0 +1,2 @@
+experiment_run_id,test_id,config_name,score,passed,latency_ms,timestamp_utc,thread_id,trace_id,input_text,response_text
+847812415eba41d9ae8cb44e8dbc6f77,bfs_python_child_mo92j6r3,think_enabled,0.25,False,428.31249999289867,2026-04-21T20:21:02.262772+00:00,847812415eba41d9ae8cb44e8dbc6f77:think_enabled:bfs_python_child_mo92j6r3,,"Напиши на Python функцию bfs(graph, start), которая выполняет обход графа в ширину и возвращает порядок посещения вершин списком. Без пояснений.",Internal Server Error

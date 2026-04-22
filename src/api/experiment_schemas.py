@@ -4,6 +4,7 @@ from pydantic import BaseModel, Field
 
 
 class ExperimentRunRequest(BaseModel):
+    experiment_run_id: Optional[str] = None
     dataset: str = Field(default="src/experiments/datasets/basic.json")
     configs_dir: str = Field(default="src/experiments/configs")
     selected_config_names: Optional[List[str]] = None

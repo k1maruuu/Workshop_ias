@@ -1,0 +1,9 @@
+node_modules
+.next
+.next-dev-cache
+out
+pnpm-lock.yaml
+tsconfig.tsbuildinfo
+*.log
+.next-dev.*
+.env

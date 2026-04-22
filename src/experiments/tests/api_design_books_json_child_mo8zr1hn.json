@@ -1,0 +1,23 @@
+{
+  "id": "api_design_books_json_child_mo8zr1hn",
+  "input": "Верни только JSON-объект с ключами entities, endpoints, risks, notes для небольшого REST API системы библиотеки. 2 2 2 2",
+  "checks": {
+    "response_not_empty": true,
+    "json_valid": true,
+    "must_have_keys": [
+      "entities",
+      "endpoints",
+      "risks",
+      "notes"
+    ],
+    "max_length": 900
+  },
+  "tags": [
+    "branch:main",
+    "board_config:think_enabled",
+    "ui-board",
+    "changed:input",
+    "parent_test:api_design_books_json",
+    "parent_block:71f9dc09fa984e929efff9e6a9148825:think_enabled:api_design_books_json"
+  ]
+}
